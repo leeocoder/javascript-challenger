@@ -5,8 +5,9 @@ const toUpperCase = (str) => {
 
 //Escreva uma função que recebe duas strings como argumento e concatena-as em uma única string com um espaço entre elas.
 const concatStrings = (str1, str2) => {
-  return `${str1}${str2}`;
+  // return `${str1}${str2}`;
   // return [str1, str2].join('');
+  return str1 + str2;
 };
 
 //Crie uma função que recebe uma string como argumento e retorna o número de caracteres nessa string.
@@ -26,7 +27,7 @@ const sumAllItemsInArray = (arr) => {
   return arr.reduce((previousValue, currentValue) => previousValue + currentValue, initialValue);
 };
 
-//Você receberá uma lista com nomes de usuarios, verifique se um usuario existe neste array e retorne true ou false.
+//Você receberá uma lista com nomes de usuários, verifique se um usuário existe neste array e retorne true ou false.
 const verifyUserInArray = (strArr, str) => {
   return strArr.includes(str);
 };
