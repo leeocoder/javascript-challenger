@@ -17,7 +17,7 @@ const numberString = (str) => {
 
 //Crie uma função que receba uma palavra, e uma frase. Você deve verificar se existe esta palavra nesta frase e retornar true ou false.
 const existKeyword = (keyword, str) => {
-  return str.split(' ').includes(keyword);
+  return str.toLowerCase().split(' ').includes(keyword.toLowerCase());
 };
 
 //Escreva uma função que recebe um array de números como argumento e retorna a soma de todos os números no array.
