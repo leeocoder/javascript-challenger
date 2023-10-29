@@ -6,7 +6,7 @@ const {
   sumAllItemsInArray,
   verifyUserInArray,
   sumNumber,
-  verifyNumberIsPairOrOdd,
+  checkIfNumberIsEvenOrOdd,
 } = require("./junior");
 
 describe("Suite de Testes para Funções de Manipulação e Verificação de Dados", () => {
@@ -41,7 +41,7 @@ describe("Suite de Testes para Funções de Manipulação e Verificação de Dad
   });
 
   test("Vereficar par ou impar", () => {
-    expect(verifyNumberIsPairOrOdd(5)).toBe("impar");
-    expect(verifyNumberIsPairOrOdd(2)).toBe("par");
+    expect(checkIfNumberIsEvenOrOdd(5)).toBe("impar");
+    expect(checkIfNumberIsEvenOrOdd(2)).toBe("par");
   });
 });

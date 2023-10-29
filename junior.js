@@ -38,7 +38,16 @@ const sumNumber = (num1, num2) => {
 };
 
 //Crie uma função que recebe um número como argumento e verifica se ele é par ou ímpar retornando  a string "par" ou "impar"
-const verifyNumberIsPairOrOdd = (num) => {
+
+/* 
+  Nota: A expressão correta é "even or odd", não "pair or odd".
+  Nomenclatura: Ao verificar se um número é par ou ímpar, usamos "check" em vez de "verify" porque "check" é gramaticalmente mais correto
+  e geralmente mais legível em contextos de avaliação direta, como neste caso.
+  const verifyNumberIsPairOrOdd = (num) => {
+   return num % 2 === 0 ? 'par' : 'impar';
+  }; */
+
+const checkIfNumberIsEvenOrOdd = (num) => {
   return num % 2 === 0 ? 'par' : 'impar';
 };
 
@@ -50,5 +59,5 @@ module.exports = {
   sumAllItemsInArray,
   verifyUserInArray,
   sumNumber,
-  verifyNumberIsPairOrOdd,
+  checkIfNumberIsEvenOrOdd,
 };
